@@ -14,7 +14,7 @@ https://davidruiz14.github.io/PortFolio_David_Ruiz/
 
 El diseño visual del proyecto fue creado previamente en Figma antes del desarrollo.
 
-https://www.figma.com/design/llOMic8Kkb3qsGWeiRDxTV/ProyectoPortFolio?m=auto&t=buB1y8YubrKP9tQk-1
+https://www.figma.com/design/llOMic8Kkb3qsGWeiRDxTV/ProyectoPortFolio?m=auto&t=7BPPw0NfZUV9ehc2-1
 
 ---
 
