@@ -1,0 +1,250 @@
+@import "tailwindcss";
+
+
+@theme{
+    --color-principal: #eaeaea;
+    --color-azul-perso: #016fb9;
+    --color-azul-oscuro: #2d2d34;
+    --color-surface: #ffffff;
+    --color-surface-soft: #e2e8f0;
+    --color-card-bg: rgb(30 41 59); /* slate-800 */
+    --color-card-content: rgb(231 229 228); /* stone-200 */
+    --color-text-secondary: rgb(100 116 139); /* slate-500 */
+    --color-border-light: rgb(203 213 225); /* slate-300 */
+}
+
+@layer components {
+  .nav-link {
+    @apply hover:text-azul-perso transition;
+  }
+
+  .panel-card {
+    @apply bg-surface rounded-2xl shadow-lg;
+  }
+
+  .muted-text {
+    @apply text-text-secondary;
+  }
+}
+/* Ocultar scrollbars */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.project-card a {
+  text-decoration: none !important;
+}
+.project-card {
+  border: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}
+
+/* Botones */
+.btn-primary {
+  @apply flex items-center justify-center gap-2 text-sm bg-azul-perso text-surface py-1.5 rounded-md transition;
+}
+
+.btn-primary:hover {
+  @apply bg-azul-oscuro;
+}
+
+/* Cards de Proyecto */
+.project-card {
+  position: relative;
+  cursor: pointer;
+  background-color: var(--color-card-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.35);
+}
+
+.project-image-container {
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  aspect-ratio: 1918 / 924;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 10;
+  background-color: var(--color-card-content);
+  flex-grow: 1;
+}
+
+.project-description {
+  color: var(--color-azul-perso);
+  font-size: 0.75rem;
+  line-height: 1.625;
+  flex-grow: 1;
+}
+
+/* Secciones */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-azul-oscuro);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .projects-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+/* Botones de lenguaje */
+.language-btn {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 9999px;
+  border: 1px solid var(--color-azul-oscuro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-btn-aura {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 2px solid var(--color-azul-oscuro);
+  opacity: 0;
+  transition: opacity 0.3s;
+  filter: blur(4px);
+  transform: scale(1.1);
+}
+
+.language-btn:hover .language-btn-aura {
+  opacity: 1;
+}
+
+/* Footer */
+.social-btn {
+  @apply flex items-center gap-2 px-4 py-2 rounded-full border border-azul-oscuro bg-azul-oscuro text-principal transition;
+}
+
+.social-btn:hover {
+  @apply bg-azul-perso;
+}
+
+/* Botones de filtro */
+.filter-btn {
+  @apply px-4 py-1.5 rounded-md bg-azul-oscuro text-surface text-sm transition;
+  cursor: pointer;
+  border: none;
+}
+
+.filter-btn:hover {
+  @apply bg-border-light text-azul-oscuro;
+}
+.filter-btn-active {
+  @apply bg-azul-perso text-surface;
+}
+.hidden {
+  display: none;
+}
+
+/* Ajustes moviles: elementos centrados */
+@media (max-width: 767px) {
+  header nav {
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  header nav > div {
+    justify-content: center;
+    text-align: center;
+  }
+
+  header nav > div:last-child {
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+  }
+
+  main > div {
+    text-align: center;
+  }
+
+  .section-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #js > .flex.gap-3.mb-10 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    max-width: 22rem;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  footer .max-w-6xl > div,
+  footer .max-w-6xl > div > div {
+    text-align: center;
+    justify-content: center;
+  }
+}

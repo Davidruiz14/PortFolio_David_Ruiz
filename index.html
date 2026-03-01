@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio - David Ruiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/output.css" />
+  </head>
+
+  <body class="bg-principal text-azul-oscuro">
+    <header class="w-full border-b border-border-light">
+      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <a href="index.html">
+            <img
+              src="./assets/img/yo1.png"
+              alt="Foto de David"
+              class="w-12 h-12 rounded-full object-cover border-2 border-azul-oscuro"
+            />
+          </a>
+          <span class="text-lg font-semibold">David Ruiz</span>
+        </div>
+
+        <div class="flex gap-8 text-sm font-medium">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="#experiencia" class="nav-link">Experiencia</a>
+          <a href="proyectos.html" class="nav-link">Proyectos</a>
+          <a href="#tecnologias" class="nav-link">Tecnologias</a>
+          <a href="#contacto" class="nav-link">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="flex justify-center">
+        <div class="bg-surface rounded-2xl shadow-xl p-4 w-64 rotate-[-4deg]">
+          <div class="bg-surface-soft rounded-xl overflow-hidden">
+            <img src="./assets/img/yo1.png" alt="Foto de David" class="w-full h-64 object-cover" />
+          </div>
+          <div class="mt-4 text-center">
+            <h2 class="text-lg font-semibold">David Ruiz</h2>
+            <p class="text-sm text-azul-perso">Web Developer</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="text-3xl md:text-4xl font-bold mb-6">
+          Hola, soy <span class="text-azul-perso">David</span>
+        </h1>
+
+        <p class="text-lg muted-text leading-relaxed mb-4">
+          Soy un chico joven con muchas ganas de aprender y seguir creciendo en el mundo del desarrollo web.
+        </p>
+
+        <p class="text-lg muted-text leading-relaxed mb-4">
+          Actualmente estoy finalizando el grado de
+          <strong>Desarrollo de Aplicaciones Web (DAW)</strong>.
+        </p>
+
+        <p class="text-lg muted-text leading-relaxed mb-6">
+          Me gusta crear paginas claras, modernas y funcionales, cuidando tanto el diseno como el codigo.
+        </p>
+      </div>
+    </main>
+
+    <section id="experiencia" class="max-w-6xl mx-auto px-6 py-24">
+      <h2 class="text-3xl font-bold mb-12 text-center">Experiencia</h2>
+
+      <div class="max-w-3xl mx-auto panel-card p-10 text-center">
+        <h3 class="text-xl font-semibold mb-4">En proceso de dar el salto al mundo laboral</h3>
+
+        <div class="w-full max-w-sm mx-auto mb-6">
+          <div class="h-2 bg-surface-soft rounded-full overflow-hidden">
+            <div class="h-full w-1/2 bg-azul-perso animate-pulse"></div>
+          </div>
+        </div>
+
+        <span class="inline-block bg-azul-perso/10 text-azul-perso px-4 py-2 rounded-full text-sm font-medium">
+          Disponible para practicas o primer trabajo
+        </span>
+      </div>
+    </section>
+
+    <section id="proyectos" class="max-w-6xl mx-auto px-6 py-24">
+      <h2 class="text-3xl font-bold mb-12 text-center">Proyectos por Lenguaje</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="panel-card p-8 hover:scale-105 transition text-center">
+          <img
+            src="./assets/img/logos/htmlcss.png"
+            alt="HTML y CSS"
+            class="h-20 w-20 mx-auto mb-6 object-contain hover:scale-110 transition"
+          />
+          <h3 class="text-2xl font-semibold mb-4">HTML y CSS</h3>
+          <p class="muted-text mb-6">Proyectos de maquetacion web, diseno responsive y estructura semantica.</p>
+          <a href="proyectos.html#html-css" class="text-azul-perso font-medium">Ver proyectos</a>
+        </div>
+
+        <div class="panel-card p-8 hover:scale-105 transition text-center">
+          <svg class="h-20 w-20 mx-auto mb-6 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#javascript"></use>
+          </svg>
+          <h3 class="text-2xl font-semibold mb-4">JavaScript</h3>
+          <p class="muted-text mb-6">Proyectos con interactividad, logica y manipulacion del DOM.</p>
+          <a href="proyectos.html#js" class="text-azul-perso font-medium">Ver proyectos</a>
+        </div>
+
+        <div class="panel-card p-8 hover:scale-105 transition text-center">
+          <svg class="h-20 w-20 mx-auto mb-6 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#java"></use>
+          </svg>
+          <h3 class="text-2xl font-semibold mb-4">Java</h3>
+          <p class="muted-text mb-6">Programas orientados a objetos y logica de programacion implementado tambien el uso de base de datos.</p>
+          <a href="proyectos.html#java" class="text-azul-perso font-medium">Ver proyectos</a>
+        </div>
+
+        <div class="panel-card p-8 hover:scale-105 transition text-center">
+          <svg class="h-20 w-20 mx-auto mb-6 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#python"></use>
+          </svg>
+          <h3 class="text-2xl font-semibold mb-4">Python</h3>
+          <p class="muted-text mb-6">Scripts y pequenos programas para resolver problemas y automatizar tareas.</p>
+          <a href="proyectos.html#python" class="text-azul-perso font-medium">Ver proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnologias" class="max-w-6xl mx-auto px-6 py-24">
+      <h2 class="text-3xl font-bold mb-6 text-center">Tecnologias</h2>
+      <p class="text-center muted-text max-w-2xl mx-auto mb-12">Herramientas y tecnologias que utilizo.</p>
+
+      <div class="max-w-5xl mx-auto bg-surface rounded-2xl shadow-lg p-12">
+        <div class="grid grid-cols-3 sm:grid-cols-6 gap-y-14 gap-x-12 place-items-center">
+          <svg class="h-16 w-16 hover:scale-110 transition" viewBox="0 0 100 100">
+            <use href="./assets/sprite.svg#html"></use>
+          </svg>
+          <svg class="h-16 w-16 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#css"></use>
+          </svg>
+          <svg class="h-16 w-16 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#tailwind"></use>
+          </svg>
+          <svg class="h-16 w-16 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#javascript"></use>
+          </svg>
+          <svg class="h-16 w-16 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#java"></use>
+          </svg>
+          <svg class="h-16 w-16 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#python"></use>
+          </svg>
+          <svg class="h-16 w-16 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#mysql"></use>
+          </svg>
+          <svg class="h-16 w-16 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#oracle"></use>
+          </svg>
+          <svg class="h-16 w-16 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#git"></use>
+          </svg>
+          <svg class="h-16 w-16 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#github2"></use>
+          </svg>
+          <svg class="h-16 w-16 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#linux"></use>
+          </svg>
+          <svg class="h-16 w-16 hover:scale-110 transition">
+            <use href="./assets/sprite.svg#bash"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contacto" class="border-t border-border-light mt-24">
+      <div class="max-w-6xl mx-auto px-6 py-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div class="text-center md:text-left">
+            <h2 class="text-lg font-semibold text-azul-oscuro">Contacto</h2>
+            <p class="text-sm muted-text">David Ruiz</p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-3 text-sm muted-text">
+            <a href="tel:+34667084582" class="nav-link">+34 667 08 45 82</a>
+            <span class="hidden sm:inline">-</span>
+            <a href="mailto:davidruizchozas0608@gmail.com" class="nav-link">
+              davidruizchozas0608@gmail.com
+            </a>
+          </div>
+
+          <div class="flex justify-center md:justify-end gap-3">
+            <a href="https://github.com/Davidruiz14" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <svg class="h-4 w-4 text-azul-oscuro group-hover:text-surface transition">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/david-ruiz-a99a433aa/" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <svg class="h-4 w-4 text-azul-oscuro group-hover:text-surface transition">
+                <use href="./assets/sprite.svg#linkedin"></use>
+              </svg>
+              LinkedIn
+            </a>
+
+            <a href="./assets/curriculumDavidRuizChozas.png" target="_blank" class="social-btn">
+              <img src="./assets/img/curriculum.png" alt="CV" class="h-4 w-4" />
+              CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

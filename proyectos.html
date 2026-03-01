@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Proyectos - David Ruiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/output.css" />
+  </head>
+
+  <body class="bg-principal text-azul-oscuro overflow-x-hidden">
+    <header class="w-full border-b border-border-light sticky top-0 z-50 bg-principal/95 backdrop-blur-md">
+      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <a href="index.html">
+            <img
+              src="./assets/img/yo1.png"
+              alt="Foto de David"
+              class="w-12 h-12 rounded-full object-cover border-2 border-azul-oscuro"
+            />
+          </a>
+          <span class="text-lg font-semibold">David Ruiz</span>
+        </div>
+
+        <div class="flex gap-8 text-sm font-medium">
+          <a href="index.html" class="nav-link">Inicio</a>
+          <a href="index.html#experiencia" class="nav-link">Experiencia</a>
+          <a href="proyectos.html" class="nav-link">Proyectos</a>
+          <a href="index.html#tecnologias" class="nav-link">Tecnologias</a>
+          <a href="index.html#contacto" class="nav-link">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="proyectos" class="min-h-[90vh] flex items-center justify-center text-center">
+      <div class="flex flex-col items-center gap-10">
+        <img
+          src="./assets/img/escritorio.png"
+          alt="David en su escritorio"
+          class="w-[520px] h-auto object-contain"
+        />
+        <h1 class="text-7xl font-bold text-azul-oscuro">Proyectos</h1>
+
+        <div class="flex flex-wrap items-center justify-center gap-6">
+          <a href="#html-css" class="language-btn">
+            <span class="language-btn-aura"></span>
+            <img src="./assets/img/logos/htmlcss.png" alt="HTML CSS" class="w-12 h-12 relative z-10" />
+          </a>
+
+          <a href="#js" class="language-btn">
+            <span class="language-btn-aura"></span>
+            <svg class="w-12 h-12 relative z-10">
+              <use href="./assets/sprite.svg#javascript"></use>
+            </svg>
+          </a>
+
+          <a href="#java" class="language-btn">
+            <span class="language-btn-aura"></span>
+            <svg class="w-12 h-12 relative z-10">
+              <use href="./assets/sprite.svg#java"></use>
+            </svg>
+          </a>
+
+          <a href="#python" class="language-btn">
+            <span class="language-btn-aura"></span>
+            <svg class="w-12 h-12 relative z-10">
+              <use href="./assets/sprite.svg#python"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="html-css" class="max-w-6xl mx-auto px-6 py-16">
+      <div class="section-header">
+        <img src="./assets/img/logos/htmlcss.png" alt="HTML y CSS" class="w-11 h-11" />
+        <h2 class="section-title">HTML y CSS</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/htmlcss/abogados.png" class="project-image" alt="Web de abogados" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Sitio web de despacho de abogados con diseno profesional y estructura semantica.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/HTMLYCSS/PaginaAbogados" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/htmlcss/portfolio.png" class="project-image" alt="Portfolio personal" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Portafolio personal con navegacion fluida y diseno limpio.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/HTMLYCSS/PortafolioPrueba" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/htmlcss/hamburgueseria.png" class="project-image" alt="Web de hamburgueseria" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Sitio web de hamburgueseria con maquetacion responsive y estructura clara.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/HTMLYCSS/PaginaRestauranteHamburguesas" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="js" class="max-w-6xl mx-auto px-6 py-16">
+      <div class="section-header flex items-center gap-3">
+        <svg class="w-11 h-11">
+          <use href="./assets/sprite.svg#javascript"></use>
+        </svg>
+        <h2 class="section-title">JavaScript</h2>
+      </div>
+
+      <div class="flex gap-3 mb-10">
+        <button data-filter="javascript" class="filter-btn flex items-center gap-2">
+          <svg class="w-5 h-5">
+            <use href="./assets/sprite.svg#javascript"></use>
+          </svg>
+          JavaScript
+        </button>
+
+        <button data-filter="react" class="filter-btn flex items-center gap-2">
+          <svg class="w-5 h-5">
+            <use href="./assets/sprite.svg#react"></use>
+          </svg>
+          React
+        </button>
+
+        <button data-filter="ts" class="filter-btn flex items-center gap-2">
+          <svg class="w-5 h-5">
+            <use href="./assets/sprite.svg#typescript"></use>
+          </svg>
+          TypeScript
+        </button>
+      </div>
+
+      <div class="projects-grid">
+        <article data-lang="javascript" class="project-card">
+          <div class="project-image-container">
+            <img
+              src="./assets/img/proyectos/js/js/proyectoPedidosBar.png"
+              class="project-image"
+              alt="Proyecto de pedidos para bar"
+            />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Aplicacion web de pedidos para bar con gestion de productos, calculo de totales y validaciones.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/JAVASCRIPT/JS/Pedidos_Restaurante" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article data-lang="react" class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/js/react/buscadorPeliculas.png" class="project-image" alt="Buscador de peliculas" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Buscador de peliculas con Fetch API y consumo de datos desde TMDB.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/JAVASCRIPT/REACT/BuscadorPeliculas" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article data-lang="react" class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/js/react/carrito.png" class="project-image" alt="Carrito de compras" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Carrito de compras funcional con gestion de estado y persistencia local.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/JAVASCRIPT/REACT/CarritoLS" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article data-lang="react" class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/js/react/tiempo.png" class="project-image" alt="Aplicacion del tiempo" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Aplicacion del tiempo con integracion de OpenWeather y pronostico en tiempo real.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/JAVASCRIPT/REACT/ComprobarTiempo" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article data-lang="ts" class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/js/ts/GastosTypeScript.png" class="project-image" alt="Control de gastos TypeScript" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              App de control de gastos con tipado estatico, categorias y calculo de presupuesto.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/JAVASCRIPT/TYPESCRIPT/contador_calorias" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article data-lang="ts" class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/js/ts/GuitarlaTypeScript.png" class="project-image" alt="Tienda de guitarras TypeScript" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Tienda de guitarras con carrito, estados tipados y componentes reutilizables.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/JAVASCRIPT/TYPESCRIPT/GuitarlaTypeScriptUseReducer" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="java" class="max-w-6xl mx-auto px-6 py-16">
+      <div class="section-header flex items-center gap-3">
+        <svg class="w-11 h-11">
+          <use href="./assets/sprite.svg#java"></use>
+        </svg>
+        <h2 class="section-title">Java</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/java/biblioteca.png" class="project-image" alt="Proyecto biblioteca Java" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Sistema de biblioteca en Java con gestion de libros, prestamos y control de usuarios.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/JAVA/JpaBiblioteca" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/java/banco.png" class="project-image" alt="Proyecto banco Java" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Simulador de operaciones bancarias en Java con cuentas, transferencias y validaciones de saldo.
+            </p>
+            <a href="#" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/java/gestiondecoches.png" class="project-image" alt="Proyecto gestion de coches Java" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Aplicacion de gestion de coches en Java con registro, consulta y mantenimiento de datos.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/JAVA/gestiondecoches" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="python" class="max-w-6xl mx-auto px-6 py-16">
+      <div class="section-header flex items-center gap-3">
+        <svg class="w-11 h-11">
+          <use href="./assets/sprite.svg#python"></use>
+        </svg>
+        <h2 class="section-title">Python</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/img/proyectos/python/CRUD_futbolistas.png" alt="CRUD Futbolistas" class="project-image" />
+          </div>
+          <div class="project-card-content">
+            <p class="project-description">
+              Aplicacion CRUD de futbolistas en Python con gestion completa de datos.
+            </p>
+            <a href="https://github.com/Davidruiz14/Proyectos-David-Ruiz/tree/main/PYTHON/CRUD_futbolistas" target="_blank" class="btn-primary">
+              <svg class="h-4 w-4 fill-current">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer id="contacto" class="border-t border-border-light mt-24">
+      <div class="max-w-6xl mx-auto px-6 py-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div class="text-center md:text-left">
+            <h2 class="text-lg font-semibold text-azul-oscuro">Contacto</h2>
+            <p class="text-sm muted-text">David Ruiz</p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-3 text-sm muted-text">
+            <a href="tel:+34667084582" class="nav-link">+34 667 08 45 82</a>
+            <span class="hidden sm:inline">-</span>
+            <a href="mailto:davidruizchozas0608@gmail.com" class="nav-link">
+              davidruizchozas0608@gmail.com
+            </a>
+          </div>
+
+          <div class="flex justify-center md:justify-end gap-3">
+            <a
+              href="https://github.com/Davidruiz14"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn"
+            >
+              <svg class="h-4 w-4 text-azul-oscuro group-hover:text-surface transition">
+                <use href="./assets/sprite.svg#github"></use>
+              </svg>
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/david-ruiz-a99a433aa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn"
+            >
+              <svg class="h-4 w-4 text-azul-oscuro group-hover:text-surface transition">
+                <use href="./assets/sprite.svg#linkedin"></use>
+              </svg>
+              LinkedIn
+            </a>
+
+            <a href="./assets/curriculumDavidRuizChozas.png" target="_blank" class="social-btn">
+              <img src="./assets/img/curriculum.png" alt="CV" class="h-4 w-4" />
+              CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/scriptProyectos.js"></script>
+  </body>
+</html>
